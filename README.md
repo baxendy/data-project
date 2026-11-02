@@ -19,8 +19,8 @@ Business-intelligence assistants let people ask questions about their data in pl
 | Accuracy, entropy rule τ = 1 bit | 68.8% | 91.0% |
 | Mean questions, τ = 1 bit | 3.00 | 2.16 |
 
-* All four hypotheses are supported: the semantic layer lowers the uncertainty (H1) and the number of questions (H4), uncertainty goes together with wrong answers (H2), and questions raise accuracy (H3). All tests stay significant after a Bonferroni correction, and the direction of all four holds in 20 of 20 repetitions with new random requests.
-* A surprise: for the accuracy of the final answer, a threshold on the probability of the most likely interpretation works better than the entropy rule (mean accuracy for a budget of 0–2 questions: 0.720 against 0.680 with the semantic layer, 0.291 against 0.216 without it).
+* All four hypotheses are supported: the semantic layer lowers the uncertainty (H1) and the number of questions (H4), uncertainty goes together with wrong answers (H2), and questions raise accuracy (H3). All tests stay significant after a Bonferroni correction, and the direction of all four holds in 20 of 20 repetitions (seeds 0–19).
+* A surprise: for the accuracy of the final answer, the probability rule (ask while the probability of the most likely interpretation is below a threshold, about the least certain part) works better than the entropy rule (mean accuracy for a budget of 0–2 questions: 0.720 against 0.680 with the semantic layer, 0.291 against 0.216 without it).
 
 ## Mathematics used
 
@@ -33,7 +33,7 @@ Business-intelligence assistants let people ask questions about their data in pl
 
 ## How to run
 
-1. Install [Anaconda](https://www.anaconda.com/download) (Python 3.14.6). The results were produced with NumPy 2.5.3 and SciPy 1.18.1.
+1. Install [Anaconda](https://www.anaconda.com/download) (Python 3.14.6). The results were produced with NumPy 2.5.3 and SciPy 1.18.1 (NumPy 2.0 or newer is needed for `np.trapezoid`).
 2. Download the data as described in [`data/README.md`](data/README.md).
 3. Open `DataProject.ipynb` (for example in VS Code with the Jupyter extension and the Anaconda `base` kernel) and run all cells.
 
