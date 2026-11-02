@@ -1,4 +1,4 @@
-# Talking to Your Data
+# Having a conversation with our data
 
 ## When should a BI assistant ask a clarifying question? A simple Bayes–Shannon model tested on AdventureWorks
 
@@ -29,7 +29,7 @@ Business-intelligence assistants let people ask questions about their data in pl
 | High-school maths | logarithms (log₂), sum and product notation |
 | Probability and combinatorics | rule of product, Bayes' theorem, independence, random variables, simulation with a seed |
 | Statistics | mean, standard deviation, histogram and box plot, confidence intervals (central limit theorem), Wilcoxon, Mann–Whitney and McNemar tests, Bonferroni correction |
-| Calculus | the area under a curve with the trapezoidal rule |
+| Calculus | the derivative of the entropy of two outcomes (exact and numerical), the area under a curve with the trapezoidal rule |
 
 ## How to run
 
